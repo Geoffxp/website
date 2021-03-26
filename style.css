@@ -117,3 +117,7 @@ ol, ul {
 hr {
   margin-top: 50px;
 }
+
+p {
+  padding: 10px;
+}
