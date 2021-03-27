@@ -1,6 +1,7 @@
-html, body {
-  margin: 0px;
-  padding: 0px;
+/* ---- STYLING FOR MAJOR SECTIONS OF SITE ---- */
+
+body {
+  background-color: rgb(34, 34, 34);
 }
 
 header {
@@ -10,6 +11,13 @@ header {
   color: white;
   padding: 10px;
   width: 100%;
+  height: 175px;
+}
+
+nav {
+  text-align: right;
+  font-size: 15pt;
+  margin: 5px;
 }
 
 footer {
@@ -21,42 +29,13 @@ footer {
   margin-top: 30px;
 }
 
-a {
-  color: white;
-  text-decoration: none;
-}
+/* ---- TEXT STYLING ---- */
 
 header h1 {
   font-size: 30pt;
 }
 
-body {
-  background-color: rgb(34, 34, 34);
-}
-
-.wrapper {
-  width: 500px;
-  margin: auto;
-}
-
-nav {
-  text-align: right;
-  font-size: 15pt;
-  margin: 5px;
-}
-
-a:hover { 
-  color: lightslategray;
-}
-
-a:hover p {
-  color: lightslategray;
-}
-.centered {
-  text-align: center;
-}
-
-body h2 {
+h2, h3, h4 {
   text-align: center;
   color: white;
   font-family: monospace;
@@ -66,24 +45,19 @@ body h2 {
   padding-top: 20px;
 }
 
-body h3 {
-  text-align: center;
-  color: white;
-  font-family: monospace;
-  text-transform: uppercase;
-  letter-spacing: 5pt;
+h3 {
   font-size: 18pt;
-  padding-top: 20px;
 }
 
-body h4 {
-  text-align: center;
-  color: white;
-  font-family: monospace;
-  text-transform: uppercase;
+h4 {
   letter-spacing: 0pt;
   font-size: 16pt;
   padding-top: 25px;
+}
+
+/* GIVING TEXT SOME SPACE FOR MOBILE VIEWING */
+p {
+  padding: 10px;
 }
 
 body p {
@@ -92,21 +66,12 @@ body p {
   font-size: 12pt;
 }
 
-img {
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  filter: grayscale(100%);
-}
-
-.colorpicture {
-  filter: grayscale(0%);
-}
-
-.column {
-  float: left;
-  width: 33.33%;
+strong {
+  font-size: 14pt;
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: 5px;
+  color: rgb(212, 212, 212);
 }
 
 ol, ul {
@@ -115,28 +80,69 @@ ol, ul {
   font-size: 12pt;
 }
 
-.column ol {
-  padding-left: 100px;
+/* LINK STYLING */
+a {
+  color: white;
+  text-decoration: none;
 }
 
+a:hover { 
+  color: lightslategray;
+}
+
+a:hover p {
+  color: lightslategray;
+}
+
+/* ---- IMAGE STYLING ---- */
+
+/* CENTERS ALL IMAGES AND MAKES THE BLACK AND WHITE */
+img {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  filter: grayscale(100%);
+}
+
+/* RANDOM STYLISTIC CHANGES */
+
+/* BIGGER BREAK FOR CONTENT SEPERATORS */
 hr {
   margin-top: 50px;
 }
 
-p {
-  padding: 10px;
-}
-
+/* REMOVING THE BORDER FROM THE EMBEDDED SOUNDCLOUD AND YOUTUBE LINKS */
 iframe {
   border: 0px;
 }
 
+/* CODE TO MAKE THE CONTACT LINKS LINE UP HORIZONTALLY AND ADD BACK COLOR */
 ul li a img {
   display: inline;
   filter: grayscale(0%);
 }
 
+/* ----CLASSES---- */
+
+/* CENTER THE CONTENT WITH A WIDTH OF 500 PIXELS */
+.wrapper {
+  width: 500px;
+  margin: auto;
+}
+
+/* CENTER TEXT */
+.centered {
+  text-align: center;
+}
+
+/* LINE LIST ITEMS HORIZONTALLY FOR CONTACT LINKS */
 .contacts li{
   display: inline;
   padding-left: 25px;
+}
+
+/* CLASS TO ADD COLOR BACK TO CERTAIN PICTURES */
+.colorpicture {
+  filter: grayscale(0%);
 }
